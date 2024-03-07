@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поздравление</title>
+
+    <link rel="stylesheet" href="style.css">	
+    <style>
+
+        .figured-text {
+            font-size: 20 %;
+            font-weight: bold;
+            color: rgb(199, 33, 33);
+            text-shadow: 10px rgb(16, 128, 66);
+            display: flex;
+            justify-content: center;
+        }
+        .oval-image {
+            border-radius: 100%;            
+        }
+        .positioned-image {
+            border-radius: 100%;
+            position: absolute;
+            top: 25%; /* Задайте нужное значение для вертикального положения */
+            left: 30%; /* Задайте нужное значение для горизонтального положения */
+        }
+        .positioned-image1 {
+            border-radius: 100%;
+            position: absolute;
+            top: 15%; /* Задайте нужное значение для вертикального положения */
+            left: 7%; /* Задайте нужное значение для горизонтального положения */
+        }
+        .positioned-image2 {
+            border-radius: 100%;
+            position: absolute;
+            top: 55%; /* Задайте нужное значение для вертикального положения */
+            left: 7%; /* Задайте нужное значение для горизонтального положения */
+        }
+        .positioned-image3 {
+            border-radius: 100%;
+            position: absolute;
+            top: 13%; /* Задайте нужное значение для вертикального положения */
+            left: 75%; /* Задайте нужное значение для горизонтального положения */
+        }
+        .positioned-image4 {
+            border-radius: 100%;
+            position: absolute;
+            top: 44%; /* Задайте нужное значение для вертикального положения */
+            left: 80%; /* Задайте нужное значение для горизонтального положения */
+        }
+        .positioned-image5 {
+            border-radius: 100%;
+            position: absolute;
+            top: 70%; /* Задайте нужное значение для вертикального положения */
+            left: 75%; /* Задайте нужное значение для горизонтального положения */
+        }                               
+    </style>
+</head>
+<body>
+    <h1 class="figured-text">ПОЗДРАВЛЯЕМ С ПРАЗДНИКОМ 8 МАРТА!!!</h1>
+
+    <img src="Таня.jpg" alt="Изображение 1" id="image"  width="40%" class="positioned-image" >
+
+    <img src="image_b.jpg" alt="Изображение 2" id="image1" width="15%" class="positioned-image1">
+    <img src="image_c.jpg" alt="Изображение 3" id="image2" width="15%" class="positioned-image2">
+    <img src="image_e.jpg" alt="Изображение 4" id="image3" width="15%" class="positioned-image3">
+    <img src="image_g.jpg" alt="Изображение 5" id="image4" width="15%" class="positioned-image4">
+    <img src="image_r.jpg" alt="Изображение 6" id="image5" width="15%" class="positioned-image5">
+    
+    <audio id="audio1" src="alex.mp3"></audio>
+    <audio id="audio2" src="sansan.mp3"></audio>
+    <audio id="audio3" src="serj.mp3"></audio>
+    <audio id="audio4" src="vania.mp3"></audio>
+    <audio id="audio5" src="vlad.mp3"></audio>
+
+    <script>
+        // Получаем ссылки на изображения
+        var image1 = document.getElementById("image1");
+        var image2 = document.getElementById("image2");
+        var image3 = document.getElementById("image3");
+        var image4 = document.getElementById("image4");
+        var image5 = document.getElementById("image5");
+
+        // Получаем ссылки на аудиофайлы
+        var audio1 = document.getElementById("audio1");
+        var audio2 = document.getElementById("audio2");
+        var audio3 = document.getElementById("audio3");
+        var audio4 = document.getElementById("audio4");
+        var audio5 = document.getElementById("audio5");
+
+        // Добавляем обработчики событий "click" для изображений
+        image1.addEventListener("click", function() {
+            // При нажатии на первое изображение, проигрываем первый аудиофайл
+        if (audio1.paused){
+            audio1.play();
+        } else {
+                    audio1.pause();
+                }
+        });
+
+        image2.addEventListener("click", function() {
+            // При нажатии на второе изображение, проигрываем второй аудиофайл
+        if (audio2.paused){
+            audio2.play();
+        } else {
+                    audio2.pause();
+                }
+        });
+	image3.addEventListener("click", function() {
+            // При нажатии на 3 изображение, проигрываем 3 аудиофайл
+        if (audio3.paused){
+            audio3.play();
+        } else {
+                    audio3.pause();
+                }
+        });
+
+        image4.addEventListener("click", function() {
+            // При нажатии на 4 изображение, проигрываем 4 аудиофайл
+        if (audio4.paused){
+            audio4.play();
+        } else {
+                    audio4.pause();
+                }
+        });
+        image5.addEventListener("click", function() {
+            // При нажатии на 4 изображение, проигрываем 4 аудиофайл
+        if (audio5.paused){
+            audio5.play();
+        } else {
+                    audio5.pause();
+                }
+        });
+
+    </script>
+</body>
+</html>
